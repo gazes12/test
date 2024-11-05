@@ -1,0 +1,10 @@
+query GetPageOptions($slug: String) {
+  optionsPage(slug: $slug){
+    slogan
+        backshow_slides {
+      alt
+      src
+      title
+    }
+  }
+}

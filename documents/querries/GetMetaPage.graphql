@@ -1,0 +1,7 @@
+query GetMetaPage($slug: String) {
+	metaPage(slug: $slug) {
+		title
+	  description
+	  keywords
+	}
+}

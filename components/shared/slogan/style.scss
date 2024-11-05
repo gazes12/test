@@ -1,0 +1,57 @@
+.slogan {
+    /*     margin-top: 6.5rem !important; */
+    display: flex;
+    flex-direction: column;
+}
+
+.slogan p {
+    text-align: center;
+    font-weight: 600;
+    &:nth-child(1) {
+        font-size: 4.286rem;
+        text-transform: uppercase;
+        margin-bottom: 1.071rem;
+
+        .color {
+            background: var(--khaki-100) !important;
+            color: var(--gray-700) !important;
+            padding: 0 0.714rem;
+        }
+    }
+
+    &:nth-child(2) {
+        font-size: 2.929rem;
+    }
+
+    &:nth-child(3) {
+        font-size: 2.5rem;
+    }
+
+    @media (max-width: 991px) {
+        &:nth-child(1) {
+            font-size: 115%;
+        }
+
+        &:nth-child(2) {
+            font-size: 85%;
+        }
+
+        &:nth-child(3) {
+            font-size: 68%;
+        }
+    }
+
+    @media (max-width: 400px) {
+        &:nth-child(1) {
+            font-size: 90%;
+        }
+
+        &:nth-child(2) {
+            font-size: 70%;
+        }
+
+        &:nth-child(3) {
+            font-size: 53%;
+        }
+    }
+}

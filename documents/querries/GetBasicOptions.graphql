@@ -1,0 +1,13 @@
+query GetBasicOptions {
+  basicOptions{
+		logo {
+		  src
+		  title
+		}
+    contacts {
+      address
+      clear_tel
+      modify_tel
+    }
+  }
+}

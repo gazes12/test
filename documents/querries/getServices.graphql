@@ -1,0 +1,29 @@
+query GetServices {
+services {
+  nodes {
+    id
+    title
+  	content
+    price
+    gallery {
+      alt
+      src
+      title
+    }
+    chars {
+      icon
+      name
+      value
+    }
+    icons {
+      alt
+      src
+      title
+    }
+    variations {
+      description
+      name
+    }
+  }
+}
+}
