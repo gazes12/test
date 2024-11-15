@@ -13,20 +13,20 @@ const OpenSans = Open_Sans({
   weight: ['400', '500', '600', '700', '800'],
 });
 
-async function getSlug(): Promise<string | null> { // Изменили тип возвращаемого значения
+/* async function getSlug(): Promise<string | null> { 
   const headersList = await headers();
   const slug = await headersList.get('x-slug');
   return slug;
 }
-
+ */
 async function fetchMain() {
-  const slug = await getSlug();
-  const { basicOptions } = await client.request(GetBasicOptionsDocument);
-  const { optionsPage } = await client.request(GetPageOptionsDocument, { slug });
-  return {
+/*   const slug = await getSlug();
+ */  const { basicOptions } = await client.request(GetBasicOptionsDocument);
+/*   const { optionsPage } = await client.request(GetPageOptionsDocument, { slug });
+ */  return {
     basicOptions,
-    optionsPage
-  }
+/*     optionsPage
+ */  }
 }
 
 export default async function RootLayout({

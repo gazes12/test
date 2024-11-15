@@ -38,12 +38,12 @@ export function LayoutComponent({ children, data }: LayoutComponentProps) {
 
     const store = useStore((state) => state);
     const setBasicOptions = store.setBasicOptions;
-    const setPageOptions = store.setPageOptions;
-
+    /*     const setPageOptions = store.setPageOptions;
+     */
     useEffect(() => {
         setBasicOptions(data.basicOptions);
-        setPageOptions(data.optionsPage);
-    }, [data.basicOptions, data.optionsPage]);
+/*         setPageOptions(data.optionsPage);
+ */    }, [data.basicOptions, data.optionsPage]);
 
 
     return (

@@ -28,8 +28,8 @@ export function Header({ className }: HeaderProps) {
 
                 <Breadcrumbs />
 
-                <Slogan />
-
+                {/*                 <Slogan />
+ */}
 
                 {/*                 <Backshowslides
                     items={backshow_slides}
