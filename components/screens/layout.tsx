@@ -36,25 +36,28 @@ export function LayoutComponent({ children, data }: LayoutComponentProps) {
 
 
 
-    const store = useStore((state) => state);
-    const setBasicOptions = store.setBasicOptions;
-    /*     const setPageOptions = store.setPageOptions;
-     */
-    useEffect(() => {
-        setBasicOptions(data.basicOptions);
-/*         setPageOptions(data.optionsPage);
- */    }, [data.basicOptions, data.optionsPage]);
+    /*     const store = useStore((state) => state);
+        const setBasicOptions = store.setBasicOptions;
+        const setPageOptions = store.setPageOptions; */
 
+    /*     useEffect(() => {
+            setBasicOptions(data.basicOptions);
+            setPageOptions(data.optionsPage);
+        }, [data.basicOptions, data.optionsPage]);
+     */
 
     return (
-        <>
-            <Header />
-
-            <main className="main min-h-screen flex flex-col">
-                {children}
-            </main>
-
-            <Footer className="mt-auto" />
-        </>
+        <div className="logo">
+            <h1>{data.logo.title}</h1>
+        </div>
+        /*         <>
+                    <Header />
+        
+                    <main className="main min-h-screen flex flex-col">
+                        {children}
+                    </main>
+        
+                    <Footer className="mt-auto" />
+                </> */
     )
 };
