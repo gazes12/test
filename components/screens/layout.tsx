@@ -36,15 +36,15 @@ export function LayoutComponent({ children, data }: LayoutComponentProps) {
 
 
 
-    const store = useStore((state) => state);
-    const setBasicOptions = store.setBasicOptions;
-    const setPageOptions = store.setPageOptions;
+    /*     const store = useStore((state) => state);
+        const setBasicOptions = store.setBasicOptions;
+        const setPageOptions = store.setPageOptions; */
 
-    useEffect(() => {
-        setBasicOptions(data.basicOptions);
-        setPageOptions(data.optionsPage);
-    }, [data.basicOptions, data.optionsPage]);
-
+    /*     useEffect(() => {
+            setBasicOptions(data.basicOptions);
+            setPageOptions(data.optionsPage);
+        }, [data.basicOptions, data.optionsPage]);
+     */
 
     return (
         <>

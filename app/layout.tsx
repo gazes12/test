@@ -53,15 +53,15 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const data = await fetchMain();
-
+  /*   const data = await fetchMain();
+   */
   return (
     <html lang="en">
       <body
         className={cn(OpenSans.className, 'light')}
       >
 
-        <LayoutComponent data={data} children={children} />
+        <LayoutComponent /* data={data} */ children={children} />
 
       </body>
     </html>
