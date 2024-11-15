@@ -31,10 +31,10 @@ export function Header({ className }: HeaderProps) {
                 <Slogan />
 
 
-                <Backshowslides
+                {/*                 <Backshowslides
                     items={backshow_slides}
                     options={{ autoplay: true, autoplayTimeout: 2000, autoplaySpeed: 1000, dots: false, loop: true, nav: false, items: 1, margin: 10 }}
-                    className='header-carousel__slide' />
+                    className='header-carousel__slide' /> */}
             </header>
         </Container>
     )

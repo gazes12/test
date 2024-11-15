@@ -20,10 +20,15 @@ export function OwlCarousel_({ className, children, options }: IOwlCarousel_Prop
         ssr: false,
     });
 
+    /*     const [key, setKey] = React.useState(0);
+        React.useEffect(() => {
+            setKey(key + 1);
+        }, []);
+     */
 
     return (
         <div className={cn('owl-carousel', className || '')}>
-            <OwlCarousel {...options}>
+            <OwlCarousel  {...options}>
                 {children}
             </OwlCarousel>
         </div>
